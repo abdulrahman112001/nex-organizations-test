@@ -1,0 +1,1387 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* arabic */
+
+*,
+body,
+html {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f7f9;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: 100vh;
+  overflow-x: hidden !important;
+
+}
+
+.dark body {
+  background-color: #2c3639 !important;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar on all elements */
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.bg-landing {
+  transform: rotate(0.1turn) !important;
+}
+
+.bg-landing {
+  -webkit-transform: rotate(0.1turn) !important;
+  /* لسفاري والمتصفحات القديمة */
+  transform: rotate(45deg) !important;
+  overflow: hidden;
+  /* لبقية المتصفحات */
+}
+
+.bg-landing {
+  -webkit-transform: rotate(1rad) !important;
+  overflow: hidden;
+  transform: rotate(45deg) !important;
+  /* لبقية المتصفحات */
+}
+
+.bg-landing {
+  -webkit-transform: rotate(50grad) !important;
+  overflow: hidden;
+  transform: rotate(45deg) !important;
+}
+
+
+/* Make the scrollbar transparent */
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Optional: Add some padding to the scrollbar area */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* For Safari */
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+svg {
+  color: black;
+}
+
+.dark svg {
+  color: white;
+}
+
+div {
+  scrollbar-width: thin !important;
+  scrollbar-color: transparent;
+  --scrollbar-space: 0.4rem;
+  --kt-toolbar-height: 55px !important;
+  --kt-toolbar-height-tablet-and-mobile: 55px !important;
+  --scrollbar-space: 0.4rem;
+}
+
+.css-7onajn {
+  height: 100vh;
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0px !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  text-transform: capitalize;
+}
+
+
+
+@media (max-width:440px) {
+  p {
+    font-size: 13px !important;
+  }
+
+  h1,
+  h2 {
+    font-size: 15px;
+
+  }
+}
+
+
+
+.css-dip3t8 {
+  padding: 15px 10px 70px;
+  height: 100vh !important;
+}
+
+.react-select-container {
+  @apply bg-dark-primary text-white
+}
+
+
+.ps-submenu-content {
+  background-color: #f7f7f9 !important;
+}
+
+.ps-submenu-content .ps-menu-button {
+  padding-right: 25px !important;
+}
+
+.PhoneInputInput {
+  direction: inherit;
+}
+
+.pdf-no-scroll .rpv-core__inner-pages--vertical {
+  overflow-y: hidden;
+}
+
+.ps-menu-button {
+  height: 40px !important;
+}
+
+.css-1ytr39x>.ps-menu-button {
+  height: 40px !important;
+}
+
+.css-1ip1oky>.ps-menu-button {
+  padding-right: 30px !important;
+}
+
+.ps-menu-button span:first-child {
+  margin-left: 0;
+}
+
+body[class="dark"] .ps-menu-icon,
+body[class="dark"] .ps-menu-icon.ps-active svg,
+body[class="dark"] .ps-menu-button:hover .ps-menu-icon,
+body[class="dark"] .ps-menu-button:hover .ps-menu-icon svg {
+  fill: #fff !important;
+  color: #fff !important;
+}
+
+body[class="dark"] .ps-menu-button.ps-open .ps-menu-icon {
+  fill: #a7aaad !important;
+  color: #a7aaad !important;
+}
+
+.ps-menu-label {
+  color: black !important;
+
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ps-menu-label.ps-active {
+  color: white !important;
+}
+
+.ps-menu-icon.ps-active svg {
+  fill: white !important;
+}
+
+li.ps-active {
+  color: white !important;
+}
+
+.ps-menu-icon {
+  color: rgba(76, 78, 100, 0.87) !important;
+}
+
+.ps-menu-icon svg {
+  width: 60px;
+  height: 22px;
+}
+
+.ps-menu-button:hover {
+  background-color: rgba(76, 78, 100, 0.05) !important;
+  border-radius: 8px;
+}
+
+
+@media (min-width: 1280px) {
+
+  .cards-home-page div:nth-child(5),
+  .cards-home-page div:nth-child(6),
+  .cards-home-page div:nth-child(7) {
+    grid-column: span 4 / span 4 !important;
+  }
+}
+
+
+main::-webkit-scrollbar,
+.css-dip3t8::-webkit-scrollbar {
+  display: none;
+}
+
+main,
+.css-dip3t8 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.dark .css-dip3t8 {
+  @apply bg-darkModeColor
+}
+
+.dark .css-4jwvj {
+  @apply border-darkModeColor
+}
+
+.scroll_main::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scroll_main::-webkit-scrollbar-track {
+  @apply bg-contained
+}
+
+.scroll_main::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px black;
+}
+
+.react-tel-input {
+  direction: ltr !important;
+}
+
+.react-tel-input .form-control {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  border: 0;
+  box-sizing: border-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  max-width: 100%;
+  width: 100% !important;
+  animation-name: mui-auto-fill-cancel;
+  animation-duration: 10ms;
+  color: black;
+  height: 59px;
+  padding-left: 50px !important;
+  border-radius: 8px;
+  padding: 16.5px 14px;
+  border: 1px solid #d8d8dd !important;
+}
+
+
+.dark .react-tel-input .form-control {
+  @apply bg-dark-primary
+}
+
+.dark .react-tel-input .form-control {
+  border: 1px solid #555d64 !important;
+}
+
+.dark .react-tel-input .form-control {
+  color: white;
+
+}
+
+.react-tel-input .flag-dropdown {
+  border-radius: 5px 0 0 5px;
+}
+
+.dark .react-tel-input .flag-dropdown {
+  @apply bg-dark-primary border-[#555d64]
+}
+
+.react-tel-input .selected-flag {
+  outline: none;
+  position: relative;
+  width: 46px !important;
+  height: 100%;
+  padding: 0 0 0 8px;
+  border-radius: 3px 0 0 3px;
+}
+
+.react-tel-input .selected-flag .flag {
+  position: absolute;
+  top: 50%;
+  left: 18px !important;
+  transform: scale(1.4);
+  margin-top: -5px;
+}
+
+.react-tel-input .selected-flag .arrow {
+  position: relative;
+  top: 50%;
+  margin-top: -2px;
+  left: -8px !important;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+
+.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label {
+  width: 100% !important;
+}
+
+
+.MuiBox-root {
+  backdrop-filter: inherit !important;
+}
+
+.light-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.dark-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.app-brand-logo.demo svg {
+  width: 38px;
+  height: 20px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.25rem;
+}
+
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks>* {
+  display: block !important;
+}
+
+.demo-inline-spacing>* {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+.demo-vertical-spacing>* {
+  margin-top: 1.25rem !important;
+  margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing.demo-only-element> :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg>* {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-lg.demo-only-element> :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl>* {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+
+.demo-vertical-spacing-xl.demo-only-element> :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir="rtl"] .rtl-only {
+  display: block !important;
+}
+
+/* Dropdown buttons going out of small screens */
+@media (max-width: 576px) {
+  #dropdown-variation-demo .btn-group .text-truncate {
+    width: 300px;
+    position: relative;
+  }
+
+  #dropdown-variation-demo .btn-group .text-truncate::after {
+    position: absolute;
+    top: 45%;
+    right: 0.65rem;
+  }
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1.25rem;
+}
+
+.layout-demo-placeholder img {
+  width: 900px;
+}
+
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.fancybox__container {
+  z-index: 9999;
+}
+
+
+.MuiInputBase-input::-webkit-outer-spin-button,
+.MuiInputBase-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.point {
+  position: relative;
+
+}
+
+.point::before {
+  content: '';
+  position: absolute;
+
+  top: 7px;
+  right: -13px;
+  @apply border-[5px] border-solid border-l-contained border-t-transparent border-r-transparent border-b-transparent;
+
+
+}
+
+
+.rtl-16ohm2w .MuiStepper-alternativeLabel .MuiStepConnector-root {
+  top: 8px !important;
+}
+
+.animate {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  top: 0;
+  left: 23%;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.main_content ul li {
+  list-style: inside;
+}
+
+.afterSetting {
+  animation: spin 7s linear infinite;
+}
+
+.reverse {
+  animation: spinReverse 5s linear infinite;
+}
+
+.circleLeft {
+  animation: circleLeftAnim 4s linear infinite;
+}
+
+.circleRight {
+  animation: circleRIghtAnim 4s linear infinite;
+}
+
+.settingRight {
+  animation: spinReverse 3s linear infinite;
+}
+
+
+
+.dark .MuiInputBase-input {
+  border-radius: 8px;
+  padding-top: 15.5px;
+  border: 1px solid #555d64;
+}
+
+.MuiInputBase-input {
+  border-radius: 8px;
+  padding-top: 15.5px;
+  border: 1px solid #cccccc7d;
+  height: 24.53px !important;
+}
+
+
+.animate-\[spin_2\.5s_linear_infinite\] {
+  animation: spin 2.5s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes spinReverse {
+  100% {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(-1turn)
+  }
+}
+
+@keyframes circleLeftAnim {
+  0% {
+    transform: translateX(-5px)
+  }
+
+  50% {
+    transform: translateX(0px)
+  }
+
+  100% {
+    transform: translateX(-5px)
+  }
+
+}
+
+@keyframes circleRIghtAnim {
+  0% {
+    transform: translateX(-2px)
+  }
+
+  50% {
+    transform: translateX(0px)
+  }
+
+  100% {
+    transform: translateX(-2px)
+  }
+}
+
+.react-tel-input .selected-flag .flag {
+  left: 15px !important;
+}
+
+
+
+[dir="ltr"] .search_icon {
+  right: 15px !important;
+  left: initial;
+}
+
+.MuiTimelineItem-root.MuiTimelineItem-positionRight.MuiTimelineItem-missingOppositeContent:before {
+  content: none;
+
+}
+
+.MuiBox-root:focus-visible {
+  outline: 0;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+
+}
+
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2c3639 inset !important;
+  color: white !important;
+}
+
+.TermsAndCondition span {
+  @apply font-semibold
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: white !important;
+}
+
+.dark .MuiDataGrid-columnHeader {
+  background-color: #313b3e !important;
+}
+
+
+
+.info_hover:hover+.content_name_hover {
+  display: block;
+
+}
+
+.fyhaFe:focus {
+  border-color: #eee !important;
+  box-shadow: 0 0 0px 1px !important;
+
+}
+
+.loading {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width:900px) {
+
+  .loading {
+
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+.tab_facility .MuiTab-root.MuiTab-textColorPrimary.Mui-selected h2 {
+  @apply text-white
+}
+
+.tab_facility .MuiTab-root.MuiTab-textColorPrimary.Mui-selected svg {
+  @apply text-white
+}
+
+.MuiDataGrid-row.MuiDataGrid-row--lastVisible:hover {
+  background-color: transparent;
+}
+
+.MuiTabs-flexContainer.MuiTabs-flexContainerVertical {
+  border-left: 2px solid rgb(241, 239, 239);
+}
+
+[dir="ltr"] .MuiTabs-flexContainer.MuiTabs-flexContainerVertical {
+  border-right: 2px solid rgb(241, 239, 239);
+  border-left: 2px solid transparent;
+
+}
+
+.dark .ps-sidebar-container {
+  @apply bg-dark-primary border-r-transparent
+}
+
+.dark .ps-sidebar-root {
+  @apply border-transparent
+}
+
+.dark .rtl-1dimb5e-singleValue {
+  color: white;
+}
+
+.dark .css-1dimb5e-singleValue {
+  color: white !important;
+
+}
+
+.dark .MuiDataGrid-columnHeaderTitle {
+  color: white !important;
+
+}
+
+.MuiDataGrid-main {
+  background-color: transparent !important;
+}
+
+.dark .MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label {
+  color: white !important;
+
+}
+
+.MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label {
+  color: black !important;
+}
+
+
+.css-zchfm5-MuiPaper-root-MuiCard-root {
+  box-shadow: 0 0 0 !important;
+  background-color: transparent !important;
+}
+
+@media (max-width:960px) {
+  [dir="ltr"] .css-zchfm5-MuiPaper-root-MuiCard-root {
+    height: calc(100vh - 310px) !important;
+  }
+}
+
+.css-10grdpy-MuiDataGrid-columnHeaders {
+  background-color: transparent !important;
+}
+
+.dark .css-bvn70t-multiValue,
+.dark .rtl-bvn70t-multiValue {
+  background-color: #3a474b;
+}
+
+.dark .rtl-1r5cbbl-placeholder {
+  color: white;
+}
+
+.dark .css-1r5cbbl-placeholder {
+  color: white;
+}
+
+.dark .MuiDataGrid-row:hover {
+  background-color: #313b3e !important;
+}
+
+.dark .MuiPickersToolbar-content h2 {
+  color: white !important;
+
+}
+
+.dark .MuiPickersToolbar-content div {
+  color: white !important;
+
+}
+
+
+.dark .rtl-1g0ciz2-singleValue,
+.dark .css-1g0ciz2-singleValue {
+  color: white !important;
+}
+
+.MuiTablePagination-selectLabel {
+  color: black;
+}
+
+.dark .MuiTablePagination-selectLabel {
+  color: white;
+}
+
+.footer_shadow {
+  box-shadow: 0px 2px 10px 0px rgba(76, 78, 100, 0.22);
+}
+
+.dark .footer_shadow {
+  box-shadow: 0px 0px 0px 0px transparent;
+}
+
+
+.MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor {
+  background-color: transparent !important;
+}
+
+
+
+
+.MuiBackdrop-root.MuiModal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.dMptYj:focus {
+  border-color: rgb(159, 150, 133) !important;
+  box-shadow: #9F9685 0px 0px 0px 1px !important;
+}
+
+.date_hj {
+  direction: rtl;
+}
+
+.MuiDataGrid-overlay {
+  color: black;
+}
+
+.dark .MuiDataGrid-overlay {
+  color: white;
+}
+
+.dark input::-webkit-input-placeholder {
+  color: white;
+}
+
+.dark input:-moz-placeholder {
+  color: white !important;
+}
+
+.dark input::-moz-placeholder {
+  color: white !important;
+}
+
+.dark input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+.dark input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white !important;
+}
+
+.dark input::placeholder {
+  /* Microsoft Edge */
+  color: #9e9e9e !important;
+  ;
+}
+
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active {
+  -webkit-text-fill-color: white !important;
+}
+
+.dark .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6.MuiCard-root,
+.dark .MuiDataGrid-overlay,
+.dark .MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor,
+.dark .MuiDataGrid-footerContainer.MuiDataGrid-withBorderColor,
+.dark .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper {
+  background-color: #313B3E;
+  border-color: #2c3639 !important;
+  box-shadow: 0 0 10px -11px black;
+}
+
+.MuiInputBase-input {
+  color: black;
+}
+
+.MuiInputBase-input::placeholder,
+input::placeholder,
+.select-placeholder-text {
+  color: rgb(158, 158, 158) !important;
+  opacity: 1;
+
+}
+
+input,
+select {
+  border: #555d64 !;
+}
+
+
+
+.dark .MuiInputBase-input::placeholder,
+.dark input::placeholder,
+.dark .select-placeholder-text {
+  color: rgb(158, 158, 158) !important;
+  opacity: 1;
+
+}
+
+
+.dark .MuiInputBase-input {
+  color: white;
+}
+
+.dark input {
+  caret-color: white;
+}
+
+.detailsOrderFacility {
+  height: calc(100vh - 28rem)
+}
+
+@media (max-width:800px) {
+  .detailsOrderFacility {
+    height: calc(100vh - 33rem) !important
+  }
+
+}
+
+[dir="ltr"] .detailsFacility .MuiTabs-indicator {
+  right: 0;
+  left: inherit;
+}
+
+[dir="ltr"] .MuiStepConnector-root.MuiStepConnector-horizontal.MuiStepConnector-alternativeLabel {
+  transform: translateX(-117%);
+}
+
+@media (max-width:1300px) {
+  [dir="ltr"] .MuiStepConnector-root.MuiStepConnector-horizontal.MuiStepConnector-alternativeLabel {
+    transform: translateX(-122%);
+  }
+
+}
+
+@media (max-width:990px) {
+  [dir="ltr"] .MuiStepConnector-root.MuiStepConnector-horizontal.MuiStepConnector-alternativeLabel {
+    transform: translateX(-128%);
+  }
+
+}
+
+@media (max-width:700px) {
+  [dir="ltr"] .MuiStepConnector-root.MuiStepConnector-horizontal.MuiStepConnector-alternativeLabel {
+    transform: translateX(-136%);
+  }
+
+}
+
+@media (max-width:585px) {
+  [dir="ltr"] .MuiStepConnector-root.MuiStepConnector-horizontal.MuiStepConnector-alternativeLabel {
+    transform: translateX(-155%);
+  }
+
+}
+
+@media (max-width:485px) {
+  [dir="ltr"] .MuiStepConnector-root.MuiStepConnector-horizontal.MuiStepConnector-alternativeLabel {
+    transform: translateX(-180%);
+  }
+
+}
+
+@media (max-width:390px) {
+  [dir="ltr"] .MuiStepConnector-root.MuiStepConnector-horizontal.MuiStepConnector-alternativeLabel {
+    transform: translateX(-200%);
+  }
+
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  color: black !important;
+}
+
+input {
+  background-color: white !important;
+}
+
+.dark input,
+.dark select {
+  @apply !bg-transparent !text-white
+}
+
+.dark .MuiTablePagination-displayedRows {
+  color: white !important;
+}
+
+.dark .MuiSelect-select.MuiTablePagination-select {
+  color: white
+}
+
+.select-placeholder-text {
+  padding: 0 5px;
+}
+
+
+
+.dark .MuiList-root.MuiList-padding.MuiMenu-list {
+  @apply bg-dark-primary text-white
+}
+
+.MuiSelect-select.MuiTablePagination-select.MuiSelect-standard:focus {
+  background-color: transparent;
+}
+
+.MuiTablePagination-displayedRows {
+  direction: ltr;
+}
+
+.decryption_orga {
+  height: max-content;
+  min-height: 2rem;
+  max-height: 25rem;
+}
+
+
+.rtl-1dimb5e-singleValue {
+  margin: 0 5px;
+}
+
+[dir="rtl"] .decryption_orga {
+  padding: 10px 10px 0 0px !important;
+}
+
+[dir="ltr"] .decryption_orga {
+  padding: 10px 0px 0 10px;
+}
+
+
+.dark .decryption_orga div,
+.dark .decryption_orga p {
+
+  text-align: start;
+}
+
+.inputTable .MuiInputBase-input {
+  padding: 8px !important;
+}
+
+.react-datepicker__current-month {
+  display: none;
+}
+
+.react-datepicker__header__dropdown {
+  margin: 6px 0;
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view {
+  visibility: visible !important;
+}
+
+.dark .react-datepicker__month-container,
+.dark .react-datepicker__month-dropdown,
+.dark .react-datepicker__year-dropdown {
+  @apply !bg-dark-primary
+}
+
+.dark .react-datepicker__header {
+  @apply !bg-dark-primary
+}
+
+.dark .react-datepicker__day, .dark .react-datepicker__month-read-view--selected-month, .dark .react-datepicker__year-read-view--selected-year, .dark .react-datepicker__day-name, .dark .react-datepicker__month-option, .dark .react-datepicker__year-option {
+  @apply !text-white
+}
+
+.dark .react-datepicker__month-read-view--down-arrow, .dark .react-datepicker__year-read-view--down-arrow, .dark .react-datepicker__navigation {
+  border-color: white !important
+}
+
+.dark .react-datepicker__triangle {
+  @apply !fill-dark-primary !text-dark-primary
+}
+
+.react-datepicker__navigation.react-datepicker__navigation--previous, .react-datepicker__navigation.react-datepicker__navigation--next {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+
+.MuiDataGrid-columnHeaderTitle {
+  text-transform: capitalize;
+}
+
+.Line {
+  border-style: dashed;
+  border-width: 1px;
+}
+
+@media (max-width:550px) {
+  .attachmentFacility {
+    height: calc(75vh);
+    overflow: scroll;
+    margin-top: 26px;
+  }
+}
+
+
+
+[dir="ltr"] .react-datepicker__month-dropdown-container {
+  margin-left: 0 !important;
+}
+
+.MuiInputLabel-root {
+  color: rgb(201, 191, 191) !important;
+}
+
+.react-datepicker__month {
+  margin-top: 0 !important;
+}
+
+.react-datepicker__day-names {
+  display: none;
+}
+
+.headerTable {
+  position: relative;
+}
+
+.headerTable::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  padding: 1px;
+  border-left: 1px solid #cececece;
+  left: -1px;
+  top: 25%;
+
+}
+
+
+/* @media (max-width:1201px) {
+  .react-tel-input .form-control {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width:1180px) {
+  .react-tel-input .form-control {
+    max-width: 74% !important;
+  }
+}
+@media (max-width:1024px) {
+  .react-tel-input .form-control {
+    max-width: 82%;
+  }
+}
+
+
+@media (max-width:844px) {
+  .react-tel-input .form-control {
+    max-width: 83% !important;
+  }
+}
+
+@media (max-width:820px) {
+  .react-tel-input .form-control {
+    max-width: 80% !important;
+  }
+}
+@media (max-width:768px) {
+  .react-tel-input .form-control {
+    max-width: 80% !important;
+  }
+}
+@media (max-width:720px) {
+  .react-tel-input .form-control {
+    max-width: 90% !important;
+  }
+}
+
+@media (max-width:540px) {
+  .react-tel-input .form-control {
+    max-width: 87% !important;
+  }
+}
+
+
+@media (max-width:414px) {
+  .react-tel-input .form-control {
+    max-width: 79% !important;
+  }
+}
+
+@media (max-width:412px) {
+  .react-tel-input .form-control {
+    max-width: 82% !important;
+  }
+}
+
+@media (max-width:430px) {
+  .react-tel-input .form-control {
+    max-width: 82% !important;
+  }
+}
+
+@media (max-width:390px) {
+  .react-tel-input .form-control {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width:360px) {
+  .react-tel-input .form-control {
+    max-width: 78%;
+  }
+}
+
+@media (max-width:280px) {
+  .react-tel-input .form-control {
+    max-width: 72%;
+  }
+} */
+
+@media (max-width:1480px) {
+  [dir='ltr'] .afterAndBeforeButton {
+    bottom: 39px !important;
+  }
+}
+
+@media (max-width:1024px) {
+  .afterAndBeforeButton {
+    bottom: 70px !important;
+  }
+}
+
+@media (max-width:820px) {
+  .afterAndBeforeButton {
+    bottom: 65px !important;
+  }
+}
+
+@media (max-width:786px) {
+  [dir='ltr'] .afterAndBeforeButton {
+    bottom: 69px !important;
+  }
+}
+
+/* 
+@media (max-width:1024px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 83% !important;
+  }
+}
+
+@media (max-width:950px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 83% !important;
+  }
+}
+
+@media (max-width:912px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width:880px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width:820px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 79% !important;
+  }
+}
+
+@media (max-width:720px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 90% !important;
+  }
+}
+
+@media (max-width:740px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 90% !important;
+  }
+}
+
+@media (max-width:667px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 89% !important;
+  }
+}
+
+@media (max-width:540px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 86% !important;
+  }
+}
+
+@media (max-width:412px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 81% !important;
+  }
+}
+
+@media (max-width:430px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 82% !important;
+  }
+}
+
+@media (max-width:414px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 81% !important;
+  }
+}
+
+@media (max-width:390px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width:375px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 79% !important;
+  }
+}
+
+@media (max-width:360px) {
+  .phoneInputAccountSetting .form-control {
+    max-width: 78% !important;
+  }
+} */
+
+.Toastify {
+  z-index: 9999 !important;
+}
+
+.dark .phone-input-error .form-control {
+  border-color: #dc2626 !important;
+  border-width: 1px !important;
+}
+
+.dark .phone-input-error .flag-dropdown {
+  border-color: #dc2626 !important;
+  border-width: 1px !important;
+}
+
+.notFoundData {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.table-class tr {
+  border-bottom: 1px solid #e9e9ec;
+  border-top: 1px solid #e9e9ec;
+
+}
+
+[dir='ltr'] .MuiPagination-ul [aria-label="Go to previous page"] {
+  transform: rotate(180deg) !important;
+
+}
+
+[dir='ltr'] .MuiPagination-ul [aria-label="Go to next page"] {
+  transform: rotate(180deg) !important;
+
+}
+
+.progress svg {
+  color: inherit;
+
+}
