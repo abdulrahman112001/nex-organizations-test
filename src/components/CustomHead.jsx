@@ -10,27 +10,24 @@ const GTAG_SRC = "https://www.googletagmanager.com/gtag/js?id=G-WK6D3JZL9S";
 
 export default function CustomHead({
   title,
- customTitle , 
+  customTitle,
   description,
   url,
   organization,
   imageUrl = "/rakaya.png",
   keywords = "ضيوف البيت",
 }) {
-  console.log("🚀 ~ organization:", organization)
+  console.log("🚀 ~ organization:", organization);
   const { orgData } = UseOrg();
 
   const fullTitle = organization?.organizations?.name;
-  const canonicalUrl = "https://www.rakaya.sa/";
-
-  // Schema.org JSON-LD structure for SEO
   const schemaOrgJSONLD = {
     "@context": "http://schema.org",
     "@type": "WebSite",
     url,
     name: title,
-    alternateName: "Rakaya",
-    image: imageUrl,
+    alternateName: organization?.organizations?.name,
+    image: organization?.organizations?.background_image,
   };
 
   return (
@@ -38,21 +35,36 @@ export default function CustomHead({
       <title>{fullTitle}</title>
       <meta name="description" content={organization?.organizations?.name} />
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={organization?.organizations?.about_us} />
-      <meta property="og:image" content={organization?.organizations?.background_image} />
-      <meta property="og:url" content={url} />
+      <meta
+        property="og:description"
+        content={organization?.organizations?.about_us}
+      />
+      <meta
+        property="og:image"
+        content={organization?.organizations?.background_image}
+      />
+      <meta property="og:url" content={organization?.organizations?.domain} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={imageUrl} />
+      <meta name="twitter:title" content={organization?.organizations?.name} />
+      <meta
+        name="twitter:description"
+        content={organization?.organizations?.about_u}
+      />
+      <meta
+        name="twitter:image"
+        content={organization?.organizations?.background_image}
+      />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta httpEquiv="Content-Language" content="ar" />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content={organization?.organizations?.name} />
+      <meta
+        property="og:site_name"
+        content={organization?.organizations?.name}
+      />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="keywords" content={keywords} />
-      <link rel="icon" href={organization?.organizations?.background_image}  />
+      <link rel="icon" href={organization?.organizations?.background_image} />
       <link rel="canonical" href={organization?.organizations?.domain} />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
