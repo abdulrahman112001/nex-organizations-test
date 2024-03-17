@@ -39,7 +39,7 @@ export default function CustomHead({
       <meta name="description" content={organization?.organizations?.name} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={organization?.organizations?.about_us} />
-      <meta property="og:image" content={imageUrl} />
+      <meta property="og:image" content={organization?.organizations?.background_image} />
       <meta property="og:url" content={url} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
@@ -52,7 +52,7 @@ export default function CustomHead({
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="keywords" content={keywords} />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href={organization?.organizations?.background_image}  />
       <link rel="canonical" href={organization?.organizations?.domain} />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link

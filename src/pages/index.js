@@ -7,12 +7,12 @@ export async function getServerSideProps(context) {
   const protocol = host.includes('localhost') ? 'http' : 'https'; // Simple check
   // const baseUrl = `${protocol}://${host}`;
 
+  // console.log("🚀 ~ getServerSideProps ~ baseUrl:", baseUrl)
   const baseUrl = "https://albaitguests-dev.rmcc.sa";
   const response = await fetch(
     `https://admin-dev.rmcc.sa/api/organizations?organizationDomain=${baseUrl}`
   );
   const data = await response.json();
-
   // Pass data to the page via props
   return { props: { orgData: data } };
 }
